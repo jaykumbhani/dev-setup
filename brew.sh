@@ -31,9 +31,10 @@ brew install moreutils
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew install findutils
 # Install GNU `sed`, overwriting the built-in `sed`.
-brew install gnu-sed
+brew install gnu-sed --with-default-names
 # Install Bash 4.
 brew install bash
+brew tap homebrew/versions
 brew install bash-completion2
 # We installed the new shell, now we have to activate it
 echo "Adding the newly installed shell to the list of allowed shells"
@@ -50,6 +51,9 @@ brew install wget --with-iri
 # see http://git.io/brew-narwhal-ringo.
 brew install ringojs
 brew install narwhal
+
+# Apple Store command line tool Mac App Store CLI (mas)
+brew install mas
 
 # Install Python
 brew install python
@@ -103,7 +107,7 @@ brew install xz
 # Install other useful binaries.
 brew install ack
 brew install dark-mode
-#brew install exiv2
+# brew install exiv2
 brew install git
 brew install git-lfs
 brew install git-flow
@@ -124,6 +128,7 @@ brew install webkit2png
 brew install zopfli
 brew install pkg-config libffi
 brew install pandoc
+brew install maven
 
 # Lxml and Libxslt
 brew install libxml2
@@ -136,10 +141,10 @@ brew install heroku/brew/heroku
 heroku update
 
 # Core casks
-brew cask install --appdir="/Applications" alfred
+# brew cask install --appdir="/Applications" alfred
 brew cask install --appdir="~/Applications" iterm2
 brew cask install --appdir="~/Applications" java
-brew cask install --appdir="~/Applications" xquartz
+# brew cask install --appdir="~/Applications" xquartz
 
 # Development tool casks
 brew cask install --appdir="/Applications" sublime-text
@@ -151,20 +156,51 @@ brew cask install --appdir="/Applications" macdown
 # Misc casks
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" firefox
-brew cask install --appdir="/Applications" skype
+# brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" slack
-brew cask install --appdir="/Applications" dropbox
-brew cask install --appdir="/Applications" evernote
-brew cask install --appdir="/Applications" 1password
-#brew cask install --appdir="/Applications" gimp
-#brew cask install --appdir="/Applications" inkscape
+# brew cask install --appdir="/Applications" dropbox
+# brew cask install --appdir="/Applications" evernote
+# brew cask install --appdir="/Applications" 1password
+brew cask install --appdir="/Applications" textwrangler
+brew cask install --appdir="/Applications" github-desktop
+brew cask install --appdir="/Applications" google-drive
+# brew cask install --appdir="/Applications" google-photos-backup
 
-#Remove comment to install LaTeX distribution MacTeX
-#brew cask install --appdir="/Applications" mactex
 
+# SourceTree for Git Management
+
+brew cask install --appdir="/Applications" sourcetree
+# brew cask install --appdir="/Applications" gimp
+# brew cask install --appdir="/Applications" inkscape
+#
+# Remove comment to install LaTeX distribution MacTeX
+# brew cask install --appdir="/Applications" mactex
+#
 # Install Docker, which requires virtualbox
 brew install docker
+brew install docker-compose
 brew install boot2docker
+brew cask install appcleaner
+brew cask install zoomus
+brew cask install numi
+brew cask install openemu
+brew cask install openoffice
+brew cask install path-finder
+brew cask install pgadmin4
+brew cask install psequel
+brew cask install sublime-text
+brew cask install istat-menus
+brew install openssl
+brew install nginx
+brew install ngrep
+brew install tig
+brew install tmux
+brew install tree
+brew install vim
+brew install watch
+brew install yank
+brew install yarn
+
 
 # Install developer friendly quick look plugins; see https://github.com/sindresorhus/quick-look-plugins
 brew cask install qlcolorcode qlstephen qlmarkdown quicklook-json qlprettypatch quicklook-csv betterzip qlimagesize webpquicklook suspicious-package quicklookase qlvideo

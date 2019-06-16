@@ -18,17 +18,20 @@ fi
 # Make sure we’re using the latest Homebrew.
 brew update
 
-# Install data stores
-brew install mysql
-brew install postgresql
-# brew install mongo
-# brew install redis
-# brew install elasticsearch
+# Installing Microsoft Remote Desktop application
+mas install 1295203466
 
-# Install mysql workbench
-# Install Cask
-brew install caskroom/cask/brew-cask
-brew cask install --appdir="/Applications" mysqlworkbench
+# Slack
+mas install 803453959
+
+brew install node
 
 # Remove outdated versions from the cellar.
 brew cleanup
+
+npm install -g coffee-script
+npm install -g grunt-cli
+npm install -g jshint
+npm install -g less
+
+# gem install jekyll
