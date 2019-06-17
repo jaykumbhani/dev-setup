@@ -166,6 +166,8 @@ brew cask install --appdir="/Applications" github-desktop
 brew cask install --appdir="/Applications" google-drive
 # brew cask install --appdir="/Applications" google-photos-backup
 
+brew cask install --appdir="/Applications" grammarly
+brew cask install --appdir="/Applications" lastpass
 
 # SourceTree for Git Management
 
